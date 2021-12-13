@@ -35,8 +35,9 @@ if __name__ == '__main__':
     # Load data
     X_test = pd.read_csv(r'../Data/Test_Features.csv', index_col=0)
     y_test = pd.read_csv(r'../Data/Test_Labels.csv', index_col=0)
-    classifiers = ['MNB','LR','RF' ,'SVM','MLP']
-    for x in classifiers:
+    #classifiers = ['MNB','LR','RF' ,'SVM','MLP']
+    classifiers = ['LR','RF']
+for x in classifiers:
         start = time.time()
         print(x)
         unpickle_and_test(x,X_test,y_test)

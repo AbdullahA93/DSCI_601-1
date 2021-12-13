@@ -130,4 +130,4 @@ if __name__ == "__main__":
     #pass the data to the one/all methods after retrived them from excel sheet
     #RandomizedSearch(X_train,y_train)
     #Gridsearch(X_train,y_train)
-    CustomTuning(X_train,y_train)
+    #CustomTuning(X_train,y_train)

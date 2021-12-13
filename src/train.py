@@ -53,11 +53,14 @@ if __name__ == "__main__":
 
 
     # perapare the classifiers with their parameters to be send to train_and_pickle
+   # classifiers = [{'classifierName': 'RF', 'classifier':RandomForestClassifier(class_weight='balanced')},
+    #               {'classifierName': 'SVM', 'classifier': svm.SVC()},
+     #              {'classifierName': 'LR', 'classifier': LogisticRegression()} ,
+      #             {'classifierName': 'MLP', 'classifier': MLPClassifier(random_state=1, max_iter=300)},
+       #            {'classifierName': 'MNB', 'classifier':MultinomialNB()}]
+
     classifiers = [{'classifierName': 'RF', 'classifier':RandomForestClassifier(class_weight='balanced')},
-                   {'classifierName': 'SVM', 'classifier': svm.SVC()},
-                   {'classifierName': 'LR', 'classifier': LogisticRegression()} ,
-                   {'classifierName': 'MLP', 'classifier': MLPClassifier(random_state=1, max_iter=300)},
-                   {'classifierName': 'MNB', 'classifier':MultinomialNB()}]
+                ]
 
     # send the classifiers one by one using for loop
     for x in classifiers:
